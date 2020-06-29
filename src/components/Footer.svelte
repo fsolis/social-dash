@@ -4,6 +4,6 @@
     Frontend Mentor
   </a>
   . Coded by
-  <a href="#">Your Name Here</a>
+  <a href="#">Freddy</a>
   .
 </div>

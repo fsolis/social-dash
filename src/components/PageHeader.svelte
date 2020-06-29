@@ -3,15 +3,20 @@
 </script>
 
 <style type="text/scss">
+  @import "../styles/styles";
+
   .page-header {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
     justify-content: space-between;
 
     &__left > h1,
     h5 {
       margin: 0.25rem 0;
+    }
+
+    &__left > h5 {
+      color: $dark-gray-blue;
     }
 
     &__right {
