@@ -33,7 +33,7 @@
       position: relative;
       background: $toggle-light;
       width: 60px;
-      height: 30px;
+      height: 26px;
       border-radius: 50px;
 
       &:active {
@@ -43,8 +43,8 @@
       &:after {
         content: "";
         position: absolute;
-        height: 24px;
-        width: 24px;
+        height: 20px;
+        width: 20px;
         background-color: white;
         border-radius: 50%;
         top: 3px;

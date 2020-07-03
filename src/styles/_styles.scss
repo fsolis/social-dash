@@ -1,6 +1,4 @@
 @import './base';
+@import './breakpoints';
 @import './variables';
-
-html {
-    background-color: green;
-}
+@import './mixins';

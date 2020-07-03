@@ -8,9 +8,7 @@ import {
 import {
     sass
 } from 'svelte-preprocess-sass';
-import {
-    join
-} from 'path';
+import url from '@rollup/plugin-url';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -23,6 +21,9 @@ export default {
         file: 'public/build/bundle.js'
     },
     plugins: [
+        url({
+            destDir: 'public'
+        }),
         svelte({
             // enable run-time checks when not in production
             dev: !production,
@@ -34,7 +35,7 @@ export default {
             preprocess: {
                 style: sass({}, {
                     name: 'scss'
-                })
+                }),
             },
         }),
 

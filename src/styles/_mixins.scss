@@ -1,0 +1,25 @@
+@mixin arrow_up() {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $lime-green;
+}
+
+@mixin arrow_down() {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $bright-red;
+}
+
+@mixin platform-card-decorator {
+    content: "";
+    border-radius: 5px 5px 0 0;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
