@@ -7,8 +7,12 @@
 
   .page-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     &__left > h1,
     &__left > h4 {
@@ -16,8 +20,24 @@
       margin: 0.25rem 0;
     }
 
-    &__left > h4 {
-      color: $light-dark-txt;
+    &__left {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $light-dark-txt;
+      margin-bottom: 1rem;
+
+      :global(.dark-mode) {
+        border-bottom: 1px solid $drk-txt;
+      }
+
+      @include tablet {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      > h4 {
+        color: $light-dark-txt;
+      }
     }
 
     &__right {

@@ -71,6 +71,11 @@
   .overview {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
+    @include desktop {
+      flex-wrap: nowrap;
+    }
 
     &__heading {
       color: $light-dark-txt;

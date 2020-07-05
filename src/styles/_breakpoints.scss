@@ -1,8 +1,15 @@
 $mobile: 375px;
+$tablet: 580px;
 $desktop: 1440px;
 
 @mixin mobile {
     @media screen and (min-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
         @content;
     }
 }

@@ -13,7 +13,7 @@
 </script>
 
 <style type="text/scss">
-  @import "../styles/variables";
+  @import "../styles/styles";
 
   :global(.dark-mode) .toggle__btn::after {
     background-color: $drk-top-bg;
@@ -22,6 +22,11 @@
   .toggle {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
 
     &__description {
       font-weight: 700;

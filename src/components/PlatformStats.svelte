@@ -46,11 +46,18 @@
 </script>
 
 <style type="text/scss">
+  @import "../styles/styles";
+
   .platform-stats {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include desktop {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
   }
 </style>
 

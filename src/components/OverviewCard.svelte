@@ -26,10 +26,26 @@
   .overview-card {
     display: flex;
     flex-direction: column;
-    width: 23%;
+    width: 100%;
     background-color: $light-card;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+
+    @include tablet {
+      width: 48%;
+
+      &:nth-child(odd) {
+        margin-right: 4%;
+      }
+    }
+
+    @include desktop {
+      width: 23%;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
 
     &__top,
     &__bottom {

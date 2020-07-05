@@ -27,11 +27,30 @@
 
   .platform-card {
     background-color: $light-card;
-    width: 23%;
-    margin: 15px;
+    // width: 23%;
+    width: 100%;
+    margin: 15px 0;
     height: 225px;
     border-radius: 5px;
     position: relative;
+
+    @include tablet {
+      width: 48%;
+
+      &:nth-child(odd) {
+        margin-right: 4%;
+      }
+    }
+
+    @include desktop {
+      width: 23%;
+
+      margin: 0;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
 
     &.facebook::after {
       @include platform-card-decorator();
@@ -51,14 +70,6 @@
     &.youtube::after {
       @include platform-card-decorator();
       background-color: $youtube;
-    }
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
     }
 
     &__header {
