@@ -21,7 +21,7 @@
       icon: "../assets/icon-instagram.svg",
       count: 5462,
       change: 2257,
-      increase: false
+      increase: true
     },
     {
       title: "Profile Views",
@@ -64,12 +64,16 @@
 <style type="text/scss">
   @import "../styles/styles";
 
+  :global(.dark-mode) .overview__heading {
+    color: $drk-white-txt;
+  }
+
   .overview {
     display: flex;
     flex-direction: column;
 
     &__heading {
-      color: $dark-gray-blue;
+      color: $light-dark-txt;
     }
 
     &__cards {

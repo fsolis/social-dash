@@ -15,8 +15,8 @@
 <style type="text/scss">
   @import "../styles/variables";
 
-  .dark-mode .toggle__btn:after {
-    background-color: $drk-blue-bg;
+  :global(.dark-mode) .toggle__btn::after {
+    background-color: $drk-top-bg;
   }
 
   .toggle {
@@ -26,12 +26,13 @@
     &__description {
       font-weight: 700;
       margin: auto 1rem auto 0;
-      color: $toggle-light;
+      color: $light-dark-txt;
     }
 
     &__btn {
+      cursor: pointer;
       position: relative;
-      background: $toggle-light;
+      background: $toggle-off;
       width: 60px;
       height: 26px;
       border-radius: 50px;
@@ -45,7 +46,7 @@
         position: absolute;
         height: 20px;
         width: 20px;
-        background-color: white;
+        background-color: $light-bg;
         border-radius: 50%;
         top: 3px;
         right: 3px;

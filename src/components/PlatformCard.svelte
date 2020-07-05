@@ -15,8 +15,18 @@
 <style type="text/scss">
   @import "../styles/styles";
 
+  :global(.dark-mode) {
+    .platform-card {
+      background-color: $drk-card;
+
+      &__count {
+        color: $drk-white-txt;
+      }
+    }
+  }
+
   .platform-card {
-    background-color: $light-gray-blue;
+    background-color: $light-card;
     width: 23%;
     margin: 15px;
     height: 225px;
@@ -65,7 +75,7 @@
     }
 
     &__handle {
-      color: $dark-gray-blue;
+      color: $light-dark-txt;
       font-size: 0.8rem;
       font-weight: 700;
     }
@@ -82,6 +92,7 @@
       font-size: 3.5rem;
       font-weight: bold;
       margin: 1rem 0 0 0;
+      color: $light-very-dark-txt;
     }
 
     &__count-label {
@@ -89,6 +100,7 @@
       font-weight: 300;
       font-size: 0.8rem;
       letter-spacing: 0.25rem;
+      color: $light-dark-txt;
       margin-top: 0.25rem;
     }
 

@@ -13,11 +13,21 @@
 <style type="text/scss">
   @import "../styles/styles";
 
+  :global(.dark-mode) {
+    .overview-card {
+      background-color: $drk-card;
+
+      &__title {
+        color: $drk-txt;
+      }
+    }
+  }
+
   .overview-card {
     display: flex;
     flex-direction: column;
     width: 23%;
-    background-color: $light-gray-blue;
+    background-color: $light-card;
     border-radius: 5px;
     margin-bottom: 1.5rem;
 
@@ -35,7 +45,7 @@
 
     &__title {
       font-weight: 600;
-      color: $dark-gray-blue;
+      color: $light-dark-txt;
       font-size: 0.9rem;
     }
 

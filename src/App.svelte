@@ -25,18 +25,13 @@
 
     &:after {
       content: "";
-      background-color: $pale-blue;
+      background-color: $light-top-bg;
       height: 20%;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       z-index: -1;
-    }
-
-    &.dark-mode {
-      color: $drk-white;
-      background-color: $drk-blue-bg;
     }
 
     .page,
@@ -48,6 +43,22 @@
 
     .page {
       margin: 2rem 10%;
+    }
+  }
+
+  .dark-mode.social-dash {
+    color: $drk-white-txt;
+    background-color: $drk-bg;
+
+    &:after {
+      content: "";
+      background-color: $drk-top-bg;
+      height: 20%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 </style>

@@ -11,12 +11,13 @@
     justify-content: space-between;
 
     &__left > h1,
-    h5 {
+    &__left > h4 {
+      font-weight: $bold;
       margin: 0.25rem 0;
     }
 
-    &__left > h5 {
-      color: $dark-gray-blue;
+    &__left > h4 {
+      color: $light-dark-txt;
     }
 
     &__right {
@@ -29,7 +30,7 @@
   <div class="page-header__left">
 
     <h1>Social Media Dashboard</h1>
-    <h5>Total Followers: 23,004</h5>
+    <h4>Total Followers: 23,004</h4>
 
   </div>
 
