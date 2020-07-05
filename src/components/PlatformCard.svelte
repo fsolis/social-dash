@@ -22,12 +22,16 @@
       &__count {
         color: $drk-white-txt;
       }
+
+      &:active {
+        background-color: lighten($drk-card, 5%);
+      }
     }
   }
 
   .platform-card {
     background-color: $light-card;
-    // width: 23%;
+    cursor: pointer;
     width: 100%;
     margin: 15px 0;
     height: 225px;
@@ -50,6 +54,10 @@
       &:nth-child(odd) {
         margin-right: 0;
       }
+    }
+
+    &:active {
+      background-color: darken($light-card, 5%);
     }
 
     &.facebook::after {

@@ -20,6 +20,10 @@
       &__title {
         color: $drk-txt;
       }
+
+      &:active {
+        background-color: lighten($drk-card, 5%);
+      }
     }
   }
 
@@ -30,6 +34,11 @@
     background-color: $light-card;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+
+    &:active {
+      background-color: darken($light-card, 5%);
+    }
 
     @include tablet {
       width: 48%;
